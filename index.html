@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="shortcut icon" href="./Dom.jpg" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Dominic</title>
+</head>
+<body>
+    <header>
+        <img src="./Dom.jpg" alt="" />
+        <nav>
+            <a href="#home">HOME</a>
+            <a href="#about">ABOUT</a>
+            <a href="#contact">CONTACT</a>
+            <a href="#services">SERVICES</a>
+        </nav>
+        <div class="auth-buttons">
+            <button id="signUpBtn">SIGN UP</button>
+            <button id="signInBtn">SIGN IN</button>
+        </div>
+    </header>
+
+    <main>
+        <section id="home" class="section">
+            <h1>Welcome to Dominic Car Wash</h1>
+            <p>Your car deserves the best care. Experience premium car wash services with us.</p>
+            <img src="./Dom.jpg" alt="Car Wash" class="home-image" />
+        </section>
+
+        <section id="about" class="section">
+            <h2>About Us</h2>
+            <p>Dominic Car Wash has been providing top-notch car cleaning services for over 10 years. Our mission is to keep your vehicle spotless and shining with eco-friendly products and expert care.</p>
+            <p>We pride ourselves on customer satisfaction and attention to detail.</p>
+        </section>
+
+        <section id="services" class="section">
+            <h2>Our Services</h2>
+            <ul>
+                <li>Exterior Wash & Wax</li>
+                <li>Interior Vacuum & Detailing</li>
+                <li>Engine Cleaning</li>
+                <li>Headlight Restoration</li>
+                <li>Full-Service Detailing Packages</li>
+            </ul>
+        </section>
+
+        <section id="contact" class="section">
+            <h2>Contact Us</h2>
+            <p>Have questions or want to book an appointment? Reach out to us!</p>
+            <address>
+                <strong>Dominic Car Wash</strong><br />
+                123 Clean St, Washville, CA 90210<br />
+                Phone: (123) 456-7890<br />
+                Email: info@dominiccarwash.com
+            </address>
+            <form id="contactForm">
+                <label for="name">Name:</label><br />
+                <input type="text" id="name" name="name" required /><br />
+                <label for="email">Email:</label><br />
+                <input type="email" id="email" name="email" required /><br />
+                <label for="message">Message:</label><br />
+                <textarea id="message" name="message" rows="4" required></textarea><br />
+                <button type="submit">Send</button>
+            </form>
+        </section>
+    </main>
+
+    <!-- Sign Up Modal -->
+    <div id="signUpModal" class="modal">
+        <div class="modal-content">
+            <span class="close" id="closeSignUp">&times;</span>
+            <h2>Sign Up</h2>
+            <form id="signUpForm">
+                <label for="signUpEmail">Email:</label><br />
+                <input type="email" id="signUpEmail" name="signUpEmail" required /><br />
+                <label for="signUpPassword">Password:</label><br />
+                <input type="password" id="signUpPassword" name="signUpPassword" required /><br />
+                <button type="submit">Register</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Sign In Modal -->
+    <div id="signInModal" class="modal">
+        <div class="modal-content">
+            <span class="close" id="closeSignIn">&times;</span>
+            <h2>Sign In</h2>
+            <form id="signInForm">
+                <label for="signInEmail">Email:</label><br />
+                <input type="email" id="signInEmail" name="signInEmail" required /><br />
+                <label for="signInPassword">Password:</label><br />
+                <input type="password" id="signInPassword" name="signInPassword" required /><br />
+                <button type="submit">Login</button>
+            </form>
+        </div>
+    </div>
+
+<script type="module" src="./index.js"></script> 
+</body>
+</html>
